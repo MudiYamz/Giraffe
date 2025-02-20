@@ -14,32 +14,30 @@ print("he really liked his name George")
 print("but didn't like being 70 years old")
 
 
-user_prompt = "What did he like? "
-text = input(user_prompt)
-print(text)
+user_prompt = "What is your name? "
+name_1 = input(user_prompt)
+print(name_1)
 
-user1_prompt = "Enter to do "
-todo1 = input(user1_prompt)
-todo2 = input(user1_prompt)
-todo3 = input(user1_prompt)
+user1_prompt = "Enter 3 things you do everyday "
+print(user1_prompt)
+todo1 = input("Activity 1: ")
+todo2 = input("Activity 2: ")
+todo3 = input("Activity 3: ")
 
-todos = (todo1, todo2, todo3, "= sex without viagra")
+todos = (todo1, todo2, todo3, " well I hope you included sleep to your list.")
 print(todos)
 
-name = input("What is the patients name? ")
-print("Hello " + name)
-birth_year = input("Enter patient's birth year ")
-age = 2024 - int(birth_year)
+TV_Show = input("What is your favourite TV Show? ")
+print("I love " + TV_Show)
+birth_year = input("What is your birth year? ")
+age = 2025 - int(birth_year)
 print(age)
-Patient_type = input("Existing or New Patient? ")
 
-
-number1 = float(input("First: "))
+print("Type any two whole numbers")
+number1 = int(input("First: "))
 number2 = int(input("Second: "))
-sum = print(number1 + number2)
-
-input("Hello ")
-print()
+add_numbers = print(number1 + number2)
+print("Remember the sum: " + add_numbers)
 
 course = 'Python for beginners '
 print(course.upper())
@@ -58,7 +56,9 @@ elif temperature > 20:   # (20, 30)
 elif temperature > 10:   # (10, 20)
     print("It's a cold day")
     print("Wear a jacket")
-     
+
+magicians = ['alice', 'david', 'chris']
+print(magicians.title(0))
 
 
 
