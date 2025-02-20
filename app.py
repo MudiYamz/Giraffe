@@ -36,11 +36,13 @@ print(age)
 print("Type any two whole numbers")
 number1 = int(input("First: "))
 number2 = int(input("Second: "))
-add_numbers = print(number1 + number2)
-print("Remember the sum: " + add_numbers)
+print(number1 + number2)
+print("Remember the sum: " + str(number1 + number2))
 
 course = 'Python for beginners '
 print(course.upper())
+print(course.title())
+print(course.lower())
 print(course.find('y'))
 print(course.replace('for', '4'))
 print("Python" in course)
@@ -58,7 +60,7 @@ elif temperature > 10:   # (10, 20)
     print("Wear a jacket")
 
 magicians = ['alice', 'david', 'chris']
-print(magicians.title(0))
+
 
 
 
