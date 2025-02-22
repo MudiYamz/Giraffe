@@ -39,7 +39,7 @@ number2 = int(input("Second: "))
 print(number1 + number2)
 print("Remember the sum: " + str(number1 + number2))
 
-course = 'Python for beginners '
+course = 'Python for beginners \t\n'
 print(course.upper())
 print(course.title())
 print(course.lower())
@@ -58,8 +58,14 @@ elif temperature > 20:   # (20, 30)
 elif temperature > 10:   # (10, 20)
     print("It's a cold day")
     print("Wear a jacket")
+elif temperature > -5:  # (-5, 10)
+    print("It's Freezing")
+    print("wear a puffer jacket\n")
 
-magicians = ['alice', 'david', 'chris']
+idol_1 = "My idol has always been Uwa"
+print(idol_1)
+new_idol_1 = idol_1.replace("Uwa", "mudi")
+print(new_idol_1)
 
 
 
