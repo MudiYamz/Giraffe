@@ -66,6 +66,8 @@ idol_1 = "My idol has always been Uwa"
 print(idol_1)
 new_idol_1 = idol_1.replace("Uwa", "mudi")
 print(new_idol_1)
+uwa_count = idol_1.count("Uwa")
+print(uwa_count)
 
 
 
