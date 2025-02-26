@@ -69,6 +69,9 @@ print(new_idol_1)
 uwa_count = idol_1.count("Uwa")
 print(uwa_count)
 
+magicians = ["alice", "david", "michael"]
+for magician in magicians:
+    print(magician)
 
 
 
