@@ -43,6 +43,7 @@ course = 'Python for beginners \t\n'
 print(course.upper())
 print(course.title())
 print(course.lower())
+print("Position of 'y' in the course title")
 print(course.find('y'))
 print(course.replace('for', '4'))
 print("Python" in course)
@@ -60,7 +61,7 @@ elif temperature > 10:   # (10, 20)
     print("Wear a jacket")
 elif temperature > -5:  # (-5, 10)
     print("It's Freezing")
-    print("wear a puffer jacket\n")
+    print("Wear a puffer jacket\t\n")
 
 idol_1 = "My idol has always been Uwa"
 print(idol_1)
@@ -69,10 +70,20 @@ print(new_idol_1)
 uwa_count = idol_1.count("Uwa")
 print(uwa_count)
 
-magicians = ["alice", "david", "michael"]
+magicians = ["harry", "dynamo", "copperfield"]
 for magician in magicians:
+    print("Top 3 magicians of all time\t\n")
     print(magician)
 
+travel_list = ["Japan", "Barbados", "Netherlands", "Denmark", "China", "Jamaica"]
+print("\nList countries you would like to visit")
+print(travel_list)
+print("\nList to be sorted alphabetically and back to original arrangement")
+print(sorted(travel_list))
+print(travel_list)
+print("\nThe list will replace Jamaica for Morocco")
+travel_list[-1] = "Morocco"
+print(travel_list)
 
 
 
