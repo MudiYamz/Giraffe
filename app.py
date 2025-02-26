@@ -65,7 +65,7 @@ elif temperature > -5:  # (-5, 10)
 
 idol_1 = "My idol has always been Uwa"
 print(idol_1)
-new_idol_1 = idol_1.replace("Uwa", "mudi")
+new_idol_1 = idol_1.replace("Uwa", "Mudi")
 print(new_idol_1)
 uwa_count = idol_1.count("Uwa")
 print(uwa_count)
@@ -84,6 +84,10 @@ print(travel_list)
 print("\nThe list will replace Jamaica for Morocco")
 travel_list[-1] = "Morocco"
 print(travel_list)
+print("\nThe list will add Nigeria")
+travel_list.append("Nigeria")
+print(travel_list)
+
 
 
 
