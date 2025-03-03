@@ -90,7 +90,18 @@ print(travel_list)
 print("\nThe list will add Nigeria")
 travel_list.append("Nigeria")
 print(travel_list)
-print(travel_list[0])
+print(travel_list[-1],"\n")
+
+pizzas = ["magherita", "pepperoni", "vegan paradise"]
+for pizza in pizzas:
+    print(pizza,"\n")
+    print("I like " + pizza.title() + " pizza.""\n")
+
+
+
+
+
+
 matrix = [[0,1], [2,3]]
 
 
