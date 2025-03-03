@@ -96,6 +96,24 @@ pizzas = ["magherita", "pepperoni", "vegan paradise"]
 for pizza in pizzas:
     print(pizza,"\n")
     print("I like " + pizza.title() + " pizza.""\n")
+print("I love so many different types of pizza\n", "I love pizza\n", "I love pizza\n")
+
+animals = ["giraffe", "bear", "lion"]
+for animal in animals:
+    print(animal)
+    print("A " + animal + " will make a great pet\n")
+print("Any of these animals will make a great pet")
+
+trill_figures = list(range(1,102))
+print(trill_figures)
+
+fig_figures = list(range(2,102,2))
+print(fig_figures)
+
+squares = []
+for value in range (1,21):
+    squares.append(value**2)
+print(squares)
 
 
 
