@@ -72,11 +72,14 @@ print(uwa_count)
 
 magicians = ["harry", "dynamo", "copperfield"]
 for magician in magicians:
-    print("Top 3 magicians of all time\t\n")
-    print(magician)
+    print("Top 3 magicians of all time")
+    print(magician,"\t\n")
 
-travel_list = ["Japan", "Barbados", "Netherlands", "Denmark", "China", "Jamaica"]
-print("\nList countries you would like to visit")
+travel_list = ["japan", "barbados", "netherlands", "denmark", "china", "jamaica"]
+for destination in travel_list:
+    print(destination)
+    print(destination.title() + " , that's a lovely destination")
+print("\nList countries I would like to visit")
 print(travel_list)
 print("\nList to be sorted alphabetically and back to original arrangement")
 print(sorted(travel_list))
@@ -87,8 +90,8 @@ print(travel_list)
 print("\nThe list will add Nigeria")
 travel_list.append("Nigeria")
 print(travel_list)
-
-
+print(travel_list[0])
+matrix = [[0,1], [2,3]]
 
 
 
