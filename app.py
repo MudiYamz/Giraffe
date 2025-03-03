@@ -105,7 +105,13 @@ for animal in animals:
 print("Any of these animals will make a great pet")
 
 trill_figures = list(range(1,102))
-print(trill_figures)
+print(trill_figures, "\n")
+
+fig = [1,2,3,4]
+print(fig)
+print(min(fig))
+print("\t", max(fig))
+print("\t\t", sum(fig), "\n")
 
 fig_figures = list(range(2,102,2))
 print(fig_figures)
@@ -114,6 +120,8 @@ squares = []
 for value in range (1,21):
     squares.append(value**2)
 print(squares)
+
+
 
 
 
