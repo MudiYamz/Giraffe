@@ -121,7 +121,9 @@ for value in range (1,21):
     squares.append(value**2)
 print(squares)
 
-
+players =["don", "michael", "john", "richard", "okemute", "frederick"]
+for player in players[:3]:
+    print(player.title())
 
 
 
