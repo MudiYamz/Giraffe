@@ -132,7 +132,7 @@ print(cubed_numbers)
 print("The first 10 ")
 
 my_food = ["pizza", "falafel", "mushrooms", "dates", "chips"]
-friend_foods = my_food[:] # COPYING LIST
+friend_foods = my_food[:] # COPYING LIST using a slice allows you to make unique changes to both list.
 
 print("My favorite foods are: ")
 print(my_food)
