@@ -122,15 +122,17 @@ for value in range (1,21):
 print(squares)
 
 players =["don", "michael", "john", "richard", "okemute", "frederick"]
+print(players)
 for player in players[:3]:
-    print(player.title())
+    print(player.title(), "\n")
 
-
-
+cubed_numbers = [value**3 for value in range(1,11)]
+print(cubed_numbers)
 
 
 
 matrix = [[0,1], [2,3]]
+
 
 
 
