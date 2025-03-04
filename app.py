@@ -75,7 +75,7 @@ for magician in magicians:
     print("Top 3 magicians of all time")
     print(magician,"\t\n")
 
-travel_list = ["japan", "barbados", "netherlands", "denmark", "china", "jamaica"]
+travel_list = ["japan", "barbados", "netherlands", "denmark", "china", "jamaica"] # creating list and for looping list
 for destination in travel_list:
     print(destination)
     print(destination.title() + " , that's a lovely destination")
@@ -95,13 +95,13 @@ print(travel_list[-1],"\n")
 pizzas = ["magherita", "pepperoni", "vegan paradise"]
 for pizza in pizzas:
     print(pizza,"\n")
-    print("I like " + pizza.title() + " pizza.""\n")
+    print("I like " + pizza.title() + " pizza.""\n") #looping a list with an added sentence and capitalising the first letter for all list values
 print("I love so many different types of pizza\n", "I love pizza\n", "I love pizza\n")
 
 animals = ["giraffe", "bear", "lion"]
 for animal in animals:
     print(animal)
-    print("A " + animal + " will make a great pet\n")
+    print("A " + animal + " will make a great pet\n") # looping a list with an added sentence
 print("Any of these animals will make a great pet")
 
 trill_figures = list(range(1,102))
@@ -113,23 +113,32 @@ print(min(fig))
 print("\t", max(fig))
 print("\t\t", sum(fig), "\n")
 
-fig_figures = list(range(2,102,2))
+fig_figures = list(range(2,102,2)) # creating a range and further defining the numeric pattern
 print(fig_figures)
 
 squares = []
 for value in range (1,21):
-    squares.append(value**2)
+    squares.append(value**2) # creating a loop to add a squared range of numbers
 print(squares)
 
+print(squares)
 players =["don", "michael", "john", "richard", "okemute", "frederick"]
 print(players)
-for player in players[:3]:
+for player in players[:3]: # looping through a sliced list
     print(player.title(), "\n")
 
-cubed_numbers = [value**3 for value in range(1,11)]
+cubed_numbers = [value**3 for value in range(1,11)] # list comprehension for cubed values
 print(cubed_numbers)
+print("The first 10 ")
 
+my_food = ["pizza", "falafel", "mushrooms", "dates", "chips"]
+friend_foods = my_food[:] # COPYING LIST
 
+print("My favorite foods are: ")
+print(my_food)
+
+print("\nMy friends favorite foods are: ")
+print(friend_foods)
 
 matrix = [[0,1], [2,3]]
 
