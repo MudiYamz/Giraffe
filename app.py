@@ -140,6 +140,10 @@ print(my_food)
 print("\nMy friends favorite foods are: ")
 print(friend_foods)
 
+dimension = (200,50)
+print(dimension[0])
+print(dimension[1])
+
 matrix = [[0,1], [2,3]]
 
 
