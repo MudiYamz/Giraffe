@@ -73,9 +73,9 @@ print(uwa_count)
 magicians = ["harry", "dynamo", "copperfield"]
 for magician in magicians:
     print("Top 3 magicians of all time")
-    print(magician,"\t\n")
+    print(magician, "\t\n")
 
-travel_list = ["japan", "barbados", "netherlands", "denmark", "china", "jamaica"] # creating list and for looping list
+travel_list = ["japan", "barbados", "netherlands", "denmark", "china", "jamaica"]  # creating list and for looping list
 for destination in travel_list:
     print(destination)
     print(destination.title() + " , that's a lovely destination")
@@ -90,49 +90,49 @@ print(travel_list)
 print("\nThe list will add Nigeria")
 travel_list.append("Nigeria")
 print(travel_list)
-print(travel_list[-1],"\n")
+print(travel_list[-1], "\n")
 
-pizzas = ["magherita", "pepperoni", "vegan paradise"]
+pizzas = ["margarita", "pepperoni", "vegan paradise"]
 for pizza in pizzas:
-    print(pizza,"\n")
-    print("I like " + pizza.title() + " pizza.""\n") #looping a list with an added sentence and capitalising the first letter for all list values
+    print(pizza, "\n")
+    print("I like " + pizza.title() + " pizza.""\n")  # looping a list and capitalising the first letters
 print("I love so many different types of pizza\n", "I love pizza\n", "I love pizza\n")
 
 animals = ["giraffe", "bear", "lion"]
 for animal in animals:
     print(animal)
-    print("A " + animal + " will make a great pet\n") # looping a list with an added sentence
+    print("A " + animal + " will make a great pet\n")  # looping a list with an added sentence
 print("Any of these animals will make a great pet")
 
-trill_figures = list(range(1,102))
+trill_figures = list(range(1, 102))
 print(trill_figures, "\n")
 
-fig = [1,2,3,4]
+fig = [1, 2, 3, 4]
 print(fig)
 print(min(fig))
 print("\t", max(fig))
 print("\t\t", sum(fig), "\n")
 
-fig_figures = list(range(2,102,2)) # creating a range and further defining the numeric pattern
+fig_figures = list(range(2, 102, 2))  # creating a range and further defining the numeric pattern
 print(fig_figures)
 
 squares = []
-for value in range (1,21):
-    squares.append(value**2) # creating a loop to add a squared range of numbers
+for value in range(1, 21):
+    squares.append(value**2)  # creating a loop to add a squared range of numbers
 print(squares)
 
 print(squares)
-players =["don", "michael", "john", "richard", "okemute", "frederick"]
+players = ["don", "michael", "john", "richard", "okemute", "frederick"]
 print(players)
-for player in players[:3]: # looping through a sliced list
+for player in players[:3]:  # looping through a sliced list
     print(player.title(), "\n")
 
-cubed_numbers = [value**3 for value in range(1,11)] # list comprehension for cubed values
+cubed_numbers = [value**3 for value in range(1, 11)]  # list comprehension for cubed values
 print(cubed_numbers)
 print("The first 10 ")
 
 my_food = ["pizza", "falafel", "mushrooms", "dates", "chips"]
-friend_foods = my_food[:] # COPYING LIST using a slice allows you to make unique changes to both list.
+friend_foods = my_food[:]  # COPYING LIST using a slice allows you to make unique changes to both list.
 
 print("My favorite foods are: ")
 print(my_food)
@@ -140,12 +140,29 @@ print(my_food)
 print("\nMy friends favorite foods are: ")
 print(friend_foods)
 
-dimension = (200,50)
-print(dimension[0])
-print(dimension[1])
+dimensions = (200, 50)
+print(dimensions[0])
+print(dimensions[1])
 
-matrix = [[0,1], [2,3]]
+print("Working with Tuples")
+angles = (300, 45, 90)
+print("Original angles")
+for angle in angles:
+    print(angle)
 
+angles = (400, 50, 95)
+print("\nModified angles")
+for angle in angles:
+    print(angle)
 
+matrix = [[0, 1], [2, 3]]
 
+Basic_foods = ("rice", "beans", "chips", "brocolli", "spinach")
+print("Buffet food list")
+for Basic_food in Basic_foods:
+    print("\n", Basic_food.title())
 
+Basic_foods = ("garri", "beans", "wedges", "brocolli", "hummus")
+print("\nModified Buffet food list")
+for Basic_food in Basic_foods:
+    print(Basic_food.title())
