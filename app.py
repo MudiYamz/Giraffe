@@ -90,8 +90,6 @@ print(travel_list)
 print("\nThe list will add Nigeria")
 travel_list.append("nigeria")
 print(travel_list)
-print("\nThe list will capitalize the first letter of each country")
-print(travel_list.title())
 print("\nShow last entry on the list")
 print(travel_list[-1], "\n")
 
