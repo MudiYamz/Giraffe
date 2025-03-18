@@ -48,7 +48,7 @@ print(course.find('y'))
 print(course.replace('for', '4'))
 print("Python" in course)
 
-temperature = float(input("What is today's temperature: "))
+temperature = int(input("What is today's temperature: "))
 
 if temperature > 30:
     print("Its a hot day")
@@ -85,11 +85,14 @@ print("\nList to be sorted alphabetically and back to original arrangement")
 print(sorted(travel_list))
 print(travel_list)
 print("\nThe list will replace Jamaica for Morocco")
-travel_list[-1] = "Morocco"
+travel_list[-1] = "morocco"
 print(travel_list)
 print("\nThe list will add Nigeria")
-travel_list.append("Nigeria")
+travel_list.append("nigeria")
 print(travel_list)
+print("\nThe list will capitalize the first letter of each country")
+print(travel_list.title())
+print("\nShow last entry on the list")
 print(travel_list[-1], "\n")
 
 pizzas = ["margarita", "pepperoni", "vegan paradise"]
@@ -166,3 +169,5 @@ Basic_foods = ("garri", "beans", "wedges", "brocolli", "hummus")
 print("\nModified Buffet food list")
 for Basic_food in Basic_foods:
     print(Basic_food.title())
+
+
