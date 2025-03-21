@@ -105,6 +105,7 @@ for animal in animals:
     print("A " + animal + " will make a great pet\n")  # looping a list with an added sentence
 print("Any of these animals will make a great pet")
 
+print("Number range from 1-101")
 trill_figures = list(range(1, 102))
 print(trill_figures, "\n")
 
@@ -159,9 +160,9 @@ for angle in angles:
 matrix = [[0, 1], [2, 3]]
 
 Basic_foods = ("rice", "beans", "chips", "brocolli", "spinach")
-print("Buffet food list")
+print("\nBuffet food list")
 for Basic_food in Basic_foods:
-    print("\n", Basic_food.title())
+    print(Basic_food.title())
 
 Basic_foods = ("garri", "beans", "wedges", "brocolli", "hummus")
 print("\nModified Buffet food list")
