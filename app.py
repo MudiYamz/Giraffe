@@ -146,7 +146,7 @@ dimensions = (200, 50)
 print(dimensions[0])
 print(dimensions[1])
 
-print("Working with Tuples")
+print("\nWorking with Tuples")
 angles = (300, 45, 90)
 print("Original angles")
 for angle in angles:
