@@ -169,4 +169,10 @@ print("\nModified Buffet food list")
 for Basic_food in Basic_foods:
     print(Basic_food.title())
 
+cars = ['audi', 'bmw', 'subaru', 'toyota']
+for car in cars:
+    if car == 'bmw':
+        print('\n', car.upper())  # Ability to single out an item in list and uppercase.
+    else:
+        print('\n', car.title())
 
