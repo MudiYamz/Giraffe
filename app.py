@@ -183,7 +183,20 @@ print(car)  # The value stored 'Audi' not affected by conditional test.
 
 requested_toppings = ['mushrooms', 'pineapple', 'onions']
 print('\n', requested_toppings)
-print("\nAre mushrooms in the requested toppings?")
+print("\nAre mushrooms in the requested toppings?")  # Checking whether a value is in a list.
 print('mushrooms' in requested_toppings)
 print("\nIs there ham in in the requested toppings?")
 print('ham' in requested_toppings)
+for requested_topping in requested_toppings:
+    if requested_topping == 'mushrooms':
+        print("Sorry we are out of mushrooms")
+    else:
+        print("Adding " + requested_topping + ".")
+
+print("\nFinished making your Pizza")
+
+banned_users = ['John', 'Andrew', 'James', 'Neo']
+user = 'Chanel'
+
+if user not in banned_users:  # Checking whether a value is not in a list, so user sees a message.
+    print("\n", user.title() + ",you can post a response if you wish.")
