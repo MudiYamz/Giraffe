@@ -176,3 +176,6 @@ for car in cars:
     else:
         print('\n', car.title())
 
+car = "Audi"
+print(car.lower() == "audi")  # converting to lower case in order to check the condition.
+
