@@ -177,5 +177,8 @@ for car in cars:
         print('\n', car.title())
 
 car = "Audi"
-print(car.lower() == "audi")  # converting to lower case in order to check the condition.
+print('\n', car.lower() == "audi")  # making case-insensitive in order to check the condition.
+print(car)  # The value stored 'Audi' not affected by conditional test.
+# This can be used to compare usernames and make sure no similar usernames e.g. John, john
+
 
