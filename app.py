@@ -181,4 +181,9 @@ print('\n', car.lower() == "audi")  # making case-insensitive in order to check 
 print(car)  # The value stored 'Audi' not affected by conditional test.
 # This can be used to compare usernames and make sure no similar usernames e.g. John, john
 
-
+requested_toppings = ['mushrooms', 'pineapple', 'onions']
+print('\n', requested_toppings)
+print("\nAre mushrooms in the requested toppings?")
+print('mushrooms' in requested_toppings)
+print("\nIs there ham in in the requested toppings?")
+print('ham' in requested_toppings)
