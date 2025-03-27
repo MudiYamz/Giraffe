@@ -189,7 +189,7 @@ print("\nIs there ham in in the requested toppings?")
 print('ham' in requested_toppings)
 for requested_topping in requested_toppings:
     if requested_topping == 'mushrooms':
-        print("Sorry we are out of mushrooms")
+        print("Sorry we are out of mushrooms")  # If there is a condition to a value within the loop.
     else:
         print("Adding " + requested_topping + ".")
 
