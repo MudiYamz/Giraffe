@@ -193,6 +193,16 @@ for requested_topping in requested_toppings:
     else:
         print("Adding " + requested_topping + ".")
 
+requested_toppings = []  # Checking that a list is not empty
+
+if requested_toppings:
+    for requested_topping in requested_toppings:
+        print("Adding " + requested_topping + ".")
+    print("\nFinished making your Pizza!")
+else:
+    print("Are you sure you want a plain pizza")
+
+
 print("\nFinished making your Pizza")
 
 banned_users = ['John', 'Andrew', 'James', 'Neo']
@@ -200,3 +210,5 @@ user = 'Chanel'
 
 if user not in banned_users:  # Checking whether a value is not in a list, so user sees a message.
     print("\n", user.title() + ",you can post a response if you wish.")
+
+
