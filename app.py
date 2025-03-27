@@ -223,3 +223,20 @@ for requested_topping in requested_toppings:
 
 print("\nFinished making your Pizza!")
 
+usernames = ["admin", "joy", "mudi", "jonathan", "tosin"]
+
+for username in usernames:
+    if username == "admin":
+        print("\nHello Admin, would you like a status report")
+    else:
+        print("Hello " + username + ", thank you for logging in.")
+
+usernames = []
+
+if usernames:
+    for username in usernames:
+        print("Hello " + username + ".")
+else:
+    print("\nWe need to get some users")
+
+
