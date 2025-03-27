@@ -239,4 +239,12 @@ if usernames:
 else:
     print("\nWe need to get some users")
 
+current_users = ["ajayi", "benedict", "joshua", "hamza", "blaise"]
 
+new_users = ["Hamza", "joshua", "james", "timothy"]
+
+for new_user in new_users:
+    if new_user.lower() in current_users:
+        print("\n", new_user + " already exist; Enter new username." )
+    else:
+        print(new_user + " :this username is available.")
