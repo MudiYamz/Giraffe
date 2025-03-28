@@ -274,3 +274,10 @@ args_tuple = (5,6,1,2,8)
 def number_jags(*number):
     print(number[0]*number[1])
 number_jags(*args_tuple)
+
+
+# Also know how to use the keyword argument.
+
+def number_square(**number):
+    print("My number is: " + number["integer"])
+number_square(integer = '2309')
