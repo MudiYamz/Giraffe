@@ -261,4 +261,8 @@ for ordinal_number in ordinal_numbers:
     else:
         print(str(ordinal_number) + "th")
 
+def number_squared(number):
+    print(number**2)
+number_squared(5)
+
 
