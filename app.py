@@ -261,8 +261,16 @@ for ordinal_number in ordinal_numbers:
     else:
         print(str(ordinal_number) + "th")
 
-def number_squared(number):
-    print(number**2)
-number_squared(5)
+def number_squared(number,power):
+    print(number**power)
+number_squared(5,3)
 
+def number_args(*number):
+    print(number[0]*number[1])
+number_args(5,6,1,2,8)
 
+args_tuple = (5,6,1,2,8)
+
+def number_jags(*number):
+    print(number[0]*number[1])
+number_jags(*args_tuple)
