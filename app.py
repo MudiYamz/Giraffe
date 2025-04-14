@@ -281,3 +281,10 @@ number_jags(*args_tuple)
 def number_square(**number):
     print("My number is: " + number["integer"])
 number_square(integer = '2309')
+
+def greet(first_name, last_name):
+    print(f"Hi {first_name} {last_name}")
+    print("hope you are doing good today")
+
+
+greet("Mudi", "Yamu")
