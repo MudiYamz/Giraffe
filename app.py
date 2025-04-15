@@ -84,11 +84,11 @@ print(travel_list)
 print("\nThe list will replace Jamaica for Morocco")
 travel_list[-1] = "morocco"
 print(travel_list)
-print("\nThe list will add Nigeria")
+print("\nNigeria will be added to the list")
 travel_list.append("nigeria")
 print(travel_list)
 print("\nShow last entry on the list")
-print(travel_list[-1], "\n")
+print(travel_list[-1].title(), "\n")
 
 pizzas = ["margarita", "pepperoni", "vegan paradise"]
 for pizza in pizzas:
