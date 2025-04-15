@@ -1,16 +1,8 @@
-character_name = "John"
-character_age = "35"
-
-print("John")
 print("   /|")
 print("  / |")
 print(" /  |")
 print("/___|")
 
-print("There once was a man named George")
-print("he was 70 years old")
-print("he really liked his name George")
-print("but didn't like being 70 years old")
 
 user_prompt = "What is your name? "
 name_1 = input(user_prompt)
@@ -22,7 +14,7 @@ todo1 = input("Activity 1: ")
 todo2 = input("Activity 2: ")
 todo3 = input("Activity 3: ")
 
-todos = (todo1, todo2, todo3, " well I hope you included sleep to your list.")
+todos = (todo1, todo2, todo3, "well I hope you included sleep to your list.")
 print(todos)
 
 TV_Show = input("What is your favourite TV Show? ")
