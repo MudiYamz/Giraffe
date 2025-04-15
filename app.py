@@ -118,17 +118,17 @@ print(fig_figures)
 squares = []
 for value in range(1, 21):
     squares.append(value ** 2)  # creating a loop to add a squared range of numbers
-print(squares)
+print(squares, "\n\n")
 
-print(squares)
 players = ["don", "michael", "john", "richard", "okemute", "frederick"]
 print(players)
 for player in players[:3]:  # looping through a sliced list
     print(player.title(), "\n")
 
+print("The first 10 number cubed")
 cubed_numbers = [value ** 3 for value in range(1, 11)]  # list comprehension for cubed values
 print(cubed_numbers)
-print("The first 10 ")
+
 
 my_food = ["pizza", "falafel", "mushrooms", "dates", "chips"]
 friend_foods = my_food[:]  # COPYING LIST using a slice allows you to make unique changes to both list.
