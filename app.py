@@ -56,16 +56,20 @@ elif temperature > -5:  # (-5, 10)
     print("It's Freezing")
     print("Wear a puffer jacket\t\n")
 
+print("System idols:")
 idol_1 = "My idol has always been Uwa"
 print(idol_1)
+print("Replacing 'Uwa' with 'Mudi'")
 new_idol_1 = idol_1.replace("Uwa", "Mudi")
 print(new_idol_1)
 uwa_count = idol_1.count("Uwa")
 print(uwa_count)
+mudi_count = new_idol_1.count("Mudi")
+print(mudi_count)
 
+print("\nTop 3 magicians of all time")
 magicians = ["harry", "dynamo", "copperfield"]
 for magician in magicians:
-    print("Top 3 magicians of all time")
     print(magician, "\t\n")
 
 travel_list = ["japan", "barbados", "netherlands", "denmark", "china", "jamaica"]  # creating list and for looping list
