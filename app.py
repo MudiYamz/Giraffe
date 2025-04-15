@@ -296,3 +296,16 @@ def greet(first_name, last_name):  #
 
 
 greet("Mudi", "Yamu")
+
+alien_0 = {'color': 'green', 'points': 5}   # Dictionary use, key-value pair
+print(alien_0['color'])  # color is the key: and its value is green
+
+new_points = alien_0['points']
+print("You just earned " + str(new_points) + " points!")
+
+alien_0 = {'color': 'green', 'points': 5}
+print(alien_0)
+
+alien_0['x-position'] = 0   # Adding key-value pair to the dictionary
+alien_0['y-position'] = 25
+print(alien_0)
