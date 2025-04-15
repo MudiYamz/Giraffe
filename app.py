@@ -7,12 +7,10 @@ print("  / |")
 print(" /  |")
 print("/___|")
 
-
 print("There once was a man named George")
 print("he was 70 years old")
 print("he really liked his name George")
 print("but didn't like being 70 years old")
-
 
 user_prompt = "What is your name? "
 name_1 = input(user_prompt)
@@ -39,13 +37,16 @@ number2 = int(input("Second: "))
 print(number1 + number2)
 print("Remember the sum: " + str(number1 + number2))
 
-course = 'Python for beginners \t\n'
+
+course = 'Python for beginners'
 print(course.upper())
 print(course.title())
 print(course.lower())
-print("Position of 'y' in the course title")
+print("What is the programming language position of 'y' in the course title:")
 print(course.find('y'))
+print("Replacing 'for' with '4' in the sentence:")
 print(course.replace('for', '4'))
+print("Is the word 'Python' in the sentence:")
 print("Python" in course)
 
 temperature = int(input("What is today's temperature: "))
@@ -53,10 +54,10 @@ temperature = int(input("What is today's temperature: "))
 if temperature > 30:
     print("Its a hot day")
     print("Drink plenty of water")
-elif temperature > 20:   # (20, 30)
+elif temperature > 20:  # (20, 30)
     print("It's a nice day")
     print("Take the scenic route")
-elif temperature > 10:   # (10, 20)
+elif temperature > 10:  # (10, 20)
     print("It's a cold day")
     print("Wear a jacket")
 elif temperature > -5:  # (-5, 10)
@@ -120,7 +121,7 @@ print(fig_figures)
 
 squares = []
 for value in range(1, 21):
-    squares.append(value**2)  # creating a loop to add a squared range of numbers
+    squares.append(value ** 2)  # creating a loop to add a squared range of numbers
 print(squares)
 
 print(squares)
@@ -129,7 +130,7 @@ print(players)
 for player in players[:3]:  # looping through a sliced list
     print(player.title(), "\n")
 
-cubed_numbers = [value**3 for value in range(1, 11)]  # list comprehension for cubed values
+cubed_numbers = [value ** 3 for value in range(1, 11)]  # list comprehension for cubed values
 print(cubed_numbers)
 print("The first 10 ")
 
@@ -202,7 +203,6 @@ if requested_toppings:
 else:
     print("Are you sure you want a plain pizza")
 
-
 print("\nFinished making your Pizza")
 
 banned_users = ['John', 'Andrew', 'James', 'Neo']
@@ -245,7 +245,7 @@ new_users = ["Hamza", "joshua", "james", "timothy"]
 
 for new_user in new_users:
     if new_user.lower() in current_users:
-        print("\n", new_user + " already exist; Enter new username." )
+        print("\n", new_user + " already exist; Enter new username.")
     else:
         print(new_user + " :this username is available.")
 
@@ -261,18 +261,27 @@ for ordinal_number in ordinal_numbers:
     else:
         print(str(ordinal_number) + "th")
 
-def number_squared(number,power):
-    print(number**power)
-number_squared(5,3)
+
+def number_squared(number, power):
+    print(number ** power)
+
+
+number_squared(5, 3)
+
 
 def number_args(*number):
-    print(number[0]*number[1])
-number_args(5,6,1,2,8)
+    print(number[0] * number[1])
 
-args_tuple = (5,6,1,2,8)
+
+number_args(5, 6, 1, 2, 8)
+
+args_tuple = (5, 6, 1, 2, 8)
+
 
 def number_jags(*number):
-    print(number[0]*number[1])
+    print(number[0] * number[1])
+
+
 number_jags(*args_tuple)
 
 
@@ -280,9 +289,12 @@ number_jags(*args_tuple)
 
 def number_square(**number):
     print("My number is: " + number["integer"])
-number_square(integer = '2309')
 
-def greet(first_name, last_name):
+
+number_square(integer='2309')
+
+
+def greet(first_name, last_name):  #
     print(f"Hi {first_name} {last_name}")
     print("hope you are doing good today")
 
