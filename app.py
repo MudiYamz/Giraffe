@@ -14,7 +14,7 @@ print("but didn't like being 70 years old")
 
 user_prompt = "What is your name? "
 name_1 = input(user_prompt)
-print(name_1)
+print("Welcome " + name_1)
 
 user1_prompt = "Enter 3 things you do everyday "
 print(user1_prompt)
@@ -34,7 +34,6 @@ print(age)
 print("Type any two whole numbers")
 number1 = int(input("First: "))
 number2 = int(input("Second: "))
-print(number1 + number2)
 print("Remember the sum: " + str(number1 + number2))
 
 
@@ -48,8 +47,9 @@ print("Replacing 'for' with '4' in the sentence:")
 print(course.replace('for', '4'))
 print("Is the word 'Python' in the sentence:")
 print("Python" in course)
+print("This is known as a boolean expression; either True or False")
 
-temperature = int(input("What is today's temperature: "))
+temperature = int(input("\nWhat is today's temperature: "))
 
 if temperature > 30:
     print("Its a hot day")
