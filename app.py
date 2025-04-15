@@ -41,7 +41,7 @@ print("Is the word 'Python' in the sentence:")
 print("Python" in course)
 print("This is known as a boolean expression; either True or False")
 
-temperature = int(input("\nWhat is today's temperature: "))
+temperature = int(input("\nWhat is today's temperature (Type temperature and get ready for a lot of jargon): "))
 
 if temperature > 30:
     print("Its a hot day")
