@@ -306,6 +306,6 @@ print("You just earned " + str(new_points) + " points!")
 alien_0 = {'color': 'green', 'points': 5}
 print(alien_0)
 
-alien_0['x-position'] = 0   # Adding key-value pair to the dictionary
+alien_0['x-position'] = 0   # Add key-value pair to the dictionary
 alien_0['y-position'] = 25
 print(alien_0)
