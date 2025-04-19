@@ -295,7 +295,7 @@ def greet(first_name, last_name):  #
     print("hope you are doing good today")
 
 
-greet("Mudi", "Yam")
+greet("Mudi", "Yamu")
 
 alien_0 = {'color': 'green', 'points': 5}   # Dictionary use, key-value pair
 print(alien_0['color'])  # color is the key: and its value is green
