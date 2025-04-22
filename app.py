@@ -309,3 +309,7 @@ print(alien_0)
 alien_0['x-position'] = 0   # Adding key-value pair to the dictionary
 alien_0['y-position'] = 25
 print(alien_0)
+
+
+python3 --version
+
