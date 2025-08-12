@@ -410,7 +410,7 @@ def describe_pet1(pet_name, animal_type='dog'):
 
 describe_pet1("willie")
 # to ignore the default value, use explicit arguments for the parameter to be ignored
-# e.g. describe_pet(animal_type='cat', pet_name='felix').
+# e.g., describe_pet(animal_type='cat', pet_name='felix').
 
 # Return simple values
 def get_formatted_name(first_name, last_name):
@@ -435,6 +435,56 @@ def get_formatted_name(first_name, last_name, middle_name=''):
 jazz_musician = get_formatted_name('kenny', 'rogers', 'g')
 print(jazz_musician)
 
+# Returning a dictionary
+def build_person(first_name, last_name, age=''):
+    """Return a dictionary of information about a person"""
+    person = {'first': first_name, 'last': last_name}
+    if age: # This section is included for the optional input of age
+        person['age'] = age
+    return person
+
+gospel_group = build_person('clarke', 'sisters', 26)
+print(gospel_group)
+
+# Using a function with a while loop
+# This is an infinite loop! So a break statement is included
+while True:
+    print("\nPlease tell me your name:")
+    print("(enter 'q' at any time to quit)")
+    f_name = input("First name: ")
+    if f_name == 'q':
+        break
+    l_name = input("Last name: ")
+    if l_name == 'q':
+        break
+
+    formatted_name = get_formatted_name(f_name, l_name)
+    print("\nHello, " + formatted_name + "!")
+
+# Passing a list
+def greet_users(names):
+    """Print a simple greeting to each user in the list."""
+    for name in names:
+        msg = "Hello, " + name.title() + "!"
+        print(msg)
+
+usernames = ['hannah', 'ty', 'margot']
+greet_users(usernames)
+
+# Modifying a list in a function
+unprinted_designs = ['samsung case', 'robot pendant', 'bertone car bumper']
+completed_models = [] # simulating the printing of each design till none left.
+
+while unprinted_designs:
+    current_design = unprinted_designs.pop()
+    # simulate creating a 3D print from the design.
+    print("Printing model: " + current_design)
+    completed_models.append(current_design)
+
+# Display all completed models.
+print("\nThe follwowing models have been printed:")
+for completed_model in completed_models:
+    print(completed_model)
 
 
 
