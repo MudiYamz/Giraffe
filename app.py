@@ -3,7 +3,7 @@ print("  / |")
 print(" /  |")
 print("/___|")
 
-
+# Input and data types
 user_prompt = "What is your name? "
 name_1 = input(user_prompt)
 print("Welcome " + name_1)
@@ -28,7 +28,6 @@ number1 = int(input("First: "))
 number2 = int(input("Second: "))
 print("Remember the sum: " + str(number1 + number2))
 
-
 course = 'Python for beginners'
 print(course.upper())
 print(course.title())
@@ -43,6 +42,7 @@ print("This is known as a boolean expression; either True or False")
 
 temperature = int(input("\nWhat is today's temperature (Type temperature and get ready for a lot of jargon): "))
 
+#For loops and conditionals
 if temperature > 30:
     print("Its a hot day")
     print("Drink plenty of water")
@@ -129,9 +129,8 @@ print("The first 10 number cubed")
 cubed_numbers = [value ** 3 for value in range(1, 11)]  # list comprehension for cubed values
 print(cubed_numbers)
 
-
 my_food = ["pizza", "falafel", "mushrooms", "dates", "chips"]
-friend_foods = my_food[:]  # COPYING LIST using a slice allows you to make unique changes to both list.
+friend_foods = my_food[:]  # COPYING LIST using a slice allows you to make unique changes to both lists.
 
 print("My favorite foods are: ")
 print(my_food)
@@ -174,9 +173,9 @@ for car in cars:
         print('\n', car.title())
 
 car = "Audi"
-print('\n', car.lower() == "audi")  # making case-insensitive in order to check the condition.
+print('\n', car.lower() == "audi")  # making a case-insensitive to check the condition.
 print(car)  # The value stored 'Audi' not affected by conditional test.
-# This can be used to compare usernames and make sure no similar usernames e.g. John, john
+# This can be used to compare usernames and make sure no similar usernames e.g., John, john
 
 requested_toppings = ['mushrooms', 'pineapple', 'onions']
 print('\n', requested_toppings)
@@ -204,7 +203,7 @@ print("\nFinished making your Pizza")
 banned_users = ['John', 'Andrew', 'James', 'Neo']
 user = 'Chanel'
 
-if user not in banned_users:  # Checking whether a value is not in a list, so user sees a message.
+if user not in banned_users:  # Checking whether a value is not in a list, so a user sees a message.
     print("\n", user.title() + ",you can post a response if you wish.")
 
 available_toppings = ["mushrooms", "olives", "green peppers", "pepperoni", "pineapple", "extra cheese"]
@@ -258,6 +257,7 @@ for ordinal_number in ordinal_numbers:
         print(str(ordinal_number) + "th")
 
 
+#Functions
 def number_squared(number, power):
     print(number ** power)
 
@@ -297,7 +297,7 @@ def greet(first_name, last_name):  #
 
 greet("Mudi", "Yamu")
 
-alien_0 = {'color': 'green', 'points': 5}   # Dictionary use, key-value pair
+alien_0 = {'color': 'green', 'points': 5}  # Dictionary use, key-value pair
 print(alien_0['color'])  # color is the key: and its value is green
 
 new_points = alien_0['points']
@@ -306,10 +306,98 @@ print("You just earned " + str(new_points) + " points!")
 alien_0 = {'color': 'green', 'points': 5}
 print(alien_0)
 
-alien_0['x-position'] = 0   # Adding key-value pair to the dictionary
+alien_0['x-position'] = 0  # Adding a key-value pair to the dictionary
 alien_0['y-position'] = 25
 print(alien_0)
 
+#List Comprehension
+prices = [10, 38, 40, 58, 62]
+halved = []
 
-python3 --version
+for price in prices:
+    half_price = price / 2
+    halved.append(half_price)
 
+print(halved)
+
+prices = [10, 38, 40, 58, 62]
+
+halved = [price / 2 for price in prices]
+print(halved)
+
+flights = ["1122", "5788", "0044"]
+
+codes_a = ["BA" + flight for flight in flights]
+print(codes_a)
+
+codes_b = []
+for flight in flights:
+    code = "BA" + flight
+    codes_b.append(code)
+
+print(codes_b)
+
+miles = [100, 57, 40, 20]
+
+km = [value * 1.609 for value in miles]
+
+print(km)
+
+answers = [False, True, True]
+
+
+#Functions
+
+def greet_user(name):
+    """Display a simple greeting"""
+    print("\nHello, " + name.title() + "!")
+
+
+greet_user('John')
+
+
+def display_message():
+    """Learning functions in Python"""
+    print("\nI am learning Python.")
+
+
+display_message()
+
+
+def favorite_book(book):
+    """Name of my favorite book"""
+    print("\n\tMy favorite book is " + book.title() + ".")
+
+
+favorite_book('alice in wonderland')
+
+# Nesting: alist of dictionaries
+alien_1 = {'color': 'blue', 'points': 25}
+alien_2 = {'color': 'blue', 'points': 27}
+
+aliens = [alien_0, alien_1, alien_2]
+for alien in aliens:
+    print(alien)
+
+
+# Make an empty list for storing aliens.
+anders = []
+
+# Making 30 green aliens.
+for ander_number in range(0,30):
+    new_ander = {'color': 'black', 'points': 12, 'speed': 'slow'}
+    anders.append(new_ander)
+    # show first 5 aliens
+    for ander in anders[:5]:
+        print(anders)
+
+print("...")
+
+# Multiple function calls
+def describe_pet(animal_type, pet_name):
+    """Display information about a pet"""
+    print("\nI have a " + animal_type + ".")
+    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+describe_pet('hamster', 'roger')
+describe_pet('dog', 'georger')
