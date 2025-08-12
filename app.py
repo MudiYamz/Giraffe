@@ -93,7 +93,7 @@ print(travel_list[-1].title(), "\n")
 pizzas = ["margarita", "pepperoni", "vegan paradise"]
 for pizza in pizzas:
     print(pizza, "\n")
-    print("I like " + pizza.title() + " pizza.""\n")  # looping a list and capitalising the first letters
+    print("I like " + pizza.title() + " pizza.""\n")  # looping a list and capitalizing the first letters
 print("I love so many different types of pizza\n", "I love pizza\n", "I love pizza\n")
 
 animals = ["giraffe", "bear", "lion"]
@@ -400,7 +400,7 @@ def describe_pet(animal_type, pet_name):
     print("My " + animal_type + "'s name is " + pet_name.title() + ".")
 
 describe_pet('hamster', 'roger')
-describe_pet('dog', 'georger')
+describe_pet('dog', 'george')
 
 # Adding a default value
 def describe_pet1(pet_name, animal_type='dog'):
@@ -409,3 +409,33 @@ def describe_pet1(pet_name, animal_type='dog'):
     print("My " + animal_type + "'s name is " + pet_name + ".")
 
 describe_pet1("willie")
+# to ignore the default value, use explicit arguments for the parameter to be ignored
+# e.g. describe_pet(animal_type='cat', pet_name='felix').
+
+# Return simple values
+def get_formatted_name(first_name, last_name):
+    """Return full name, neatly formatted"""
+    full_name = first_name + " " + last_name
+    return full_name.title()
+
+musician = get_formatted_name('jimi', 'hendrix')
+rapper = get_formatted_name('kendrick', 'lamar')
+print(musician)
+print(rapper)
+
+# Making an argument optional
+def get_formatted_name(first_name, last_name, middle_name=''):
+    """Return a full name, neatly formatted w/optional middle name"""
+    if middle_name:
+        full_name = first_name + " " + middle_name + " " + last_name
+    else:
+        full_name = first_name + " " + last_name
+    return full_name.title()
+
+jazz_musician = get_formatted_name('kenny', 'rogers', 'g')
+print(jazz_musician)
+
+
+
+
+
