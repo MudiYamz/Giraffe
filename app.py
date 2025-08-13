@@ -488,7 +488,7 @@ for completed_model in completed_models:
 
 # Constructors method
 class Person:
-    def __init__(self, name, age):
+    def __init__(self, name, age, height):
         self.name = name
         self.age = age
 
@@ -498,8 +498,49 @@ class Person:
     def sayBye(self):
         print('Bye!')
 
-teacher = Person('Emily', 24)
+teacher = Person('Emily', 24, 45)
 teacher.sayBye()
+
+# Various uses of classes
+class BookSeries:
+    def __init__(self, name, books):
+        self.name = name
+        self.books = books
+        self.num_books = len(books)
+
+    def print_name(self):
+        print(self.name)
+
+    def print_books(self):
+        print(self.books)
+
+hg = BookSeries("Harry Potter", ["Philosopher's Stone, Chamber of Secrets", "Goblet of Fire",
+                                 "Prisoner of Askerban"])
+hg.print_books()
+print(hg.num_books)
+
+class Contact:
+    first = "Jane"
+    last = "Doe"
+    cell = "311156747"
+    email = "jdoe@gmail.com"
+
+    def get_cell(self):
+        print(self.cell)
+
+    def call(self):
+        print('calling...')
+        print(self.first, self.last)
+
+
+class Song:
+    def __init__(self, name, artist):
+        self.name = name
+        self.artist = artist
+
+song = Song("wgft", "Gunna")
+next_song = Song("happy", "Pharrell")
+
 
 
 
