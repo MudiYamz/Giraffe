@@ -541,8 +541,23 @@ class Song:
 song = Song("wgft", "Gunna")
 next_song = Song("happy", "Pharrell")
 
+class Car:
+    manufacturer = "Ferrari"
+    model = 2019
+    color = "red"
 
+    def print_specs(self):
+        print(self.manufacturer)
+        print(self.model)
+        print(self.color)
 
+    def change_color(self, new_color):
+        self.color = new_color
+        print("Color is now ", self.color)
+
+car = Car()
+print(car.color)
+car.change_color("yellow")
 
 
 
