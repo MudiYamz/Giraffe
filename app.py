@@ -486,6 +486,24 @@ print("\nThe follwowing models have been printed:")
 for completed_model in completed_models:
     print(completed_model)
 
+# Constructors method
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def sayHello(self):
+        print('Hello!')
+
+    def sayBye(self):
+        print('Bye!')
+
+teacher = Person('Emily', 24)
+teacher.sayBye()
+
+
+
+
 
 
 
