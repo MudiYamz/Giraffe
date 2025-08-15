@@ -559,6 +559,39 @@ car = Car()
 print(car.color)
 car.change_color("yellow")
 
+# Object Oriented Programming and Functional programming
+
+#FP
+def getDistance(mph, h):
+    return mph * h
+
+mph = 60
+h = 2
+
+# OOP -Encapsulation
+
+class Dog:
+    name = 'Fido'
+    hungry = True
+
+    def eat(self):
+        self.hungry = False
+
+class Cat:
+    colour = "orange"
+
+    def meow(self):
+        print("Meow")
+
+class Car:
+    color = "grey"
+
+    def drive(self):
+        print("Accelerating...")
+
+
+
+
 
 
 
