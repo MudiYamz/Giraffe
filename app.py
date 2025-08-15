@@ -3,7 +3,7 @@ print("  / |")
 print(" /  |")
 print("/___|")
 
-
+# Input and data types
 user_prompt = "What is your name? "
 name_1 = input(user_prompt)
 print("Welcome " + name_1)
@@ -28,7 +28,6 @@ number1 = int(input("First: "))
 number2 = int(input("Second: "))
 print("Remember the sum: " + str(number1 + number2))
 
-
 course = 'Python for beginners'
 print(course.upper())
 print(course.title())
@@ -43,6 +42,7 @@ print("This is known as a boolean expression; either True or False")
 
 temperature = int(input("\nWhat is today's temperature (Type temperature and get ready for a lot of jargon): "))
 
+#For loops and conditionals
 if temperature > 30:
     print("Its a hot day")
     print("Drink plenty of water")
@@ -93,7 +93,7 @@ print(travel_list[-1].title(), "\n")
 pizzas = ["margarita", "pepperoni", "vegan paradise"]
 for pizza in pizzas:
     print(pizza, "\n")
-    print("I like " + pizza.title() + " pizza.""\n")  # looping a list and capitalising the first letters
+    print("I like " + pizza.title() + " pizza.""\n")  # looping a list and capitalizing the first letters
 print("I love so many different types of pizza\n", "I love pizza\n", "I love pizza\n")
 
 animals = ["giraffe", "bear", "lion"]
@@ -129,9 +129,8 @@ print("The first 10 number cubed")
 cubed_numbers = [value ** 3 for value in range(1, 11)]  # list comprehension for cubed values
 print(cubed_numbers)
 
-
 my_food = ["pizza", "falafel", "mushrooms", "dates", "chips"]
-friend_foods = my_food[:]  # COPYING LIST using a slice allows you to make unique changes to both list.
+friend_foods = my_food[:]  # COPYING LIST using a slice allows you to make unique changes to both lists.
 
 print("My favorite foods are: ")
 print(my_food)
@@ -174,9 +173,9 @@ for car in cars:
         print('\n', car.title())
 
 car = "Audi"
-print('\n', car.lower() == "audi")  # making case-insensitive in order to check the condition.
+print('\n', car.lower() == "audi")  # making a case-insensitive to check the condition.
 print(car)  # The value stored 'Audi' not affected by conditional test.
-# This can be used to compare usernames and make sure no similar usernames e.g. John, john
+# This can be used to compare usernames and make sure no similar usernames e.g., John, john
 
 requested_toppings = ['mushrooms', 'pineapple', 'onions']
 print('\n', requested_toppings)
@@ -204,7 +203,7 @@ print("\nFinished making your Pizza")
 banned_users = ['John', 'Andrew', 'James', 'Neo']
 user = 'Chanel'
 
-if user not in banned_users:  # Checking whether a value is not in a list, so user sees a message.
+if user not in banned_users:  # Checking whether a value is not in a list, so a user sees a message.
     print("\n", user.title() + ",you can post a response if you wish.")
 
 available_toppings = ["mushrooms", "olives", "green peppers", "pepperoni", "pineapple", "extra cheese"]
@@ -258,6 +257,7 @@ for ordinal_number in ordinal_numbers:
         print(str(ordinal_number) + "th")
 
 
+#Functions
 def number_squared(number, power):
     print(number ** power)
 
@@ -297,7 +297,7 @@ def greet(first_name, last_name):  #
 
 greet("Mudi", "Yamu")
 
-alien_0 = {'color': 'green', 'points': 5}   # Dictionary use, key-value pair
+alien_0 = {'color': 'green', 'points': 5}  # Dictionary use, key-value pair
 print(alien_0['color'])  # color is the key: and its value is green
 
 new_points = alien_0['points']
@@ -306,10 +306,293 @@ print("You just earned " + str(new_points) + " points!")
 alien_0 = {'color': 'green', 'points': 5}
 print(alien_0)
 
-alien_0['x-position'] = 0   # Adding key-value pair to the dictionary
+alien_0['x-position'] = 0  # Adding a key-value pair to the dictionary
 alien_0['y-position'] = 25
 print(alien_0)
 
+#List Comprehension
+prices = [10, 38, 40, 58, 62]
+halved = []
 
-python3 --version
+for price in prices:
+    half_price = price / 2
+    halved.append(half_price)
+
+print(halved)
+
+prices = [10, 38, 40, 58, 62]
+
+halved = [price / 2 for price in prices]
+print(halved)
+
+flights = ["1122", "5788", "0044"]
+
+codes_a = ["BA" + flight for flight in flights]
+print(codes_a)
+
+codes_b = []
+for flight in flights:
+    code = "BA" + flight
+    codes_b.append(code)
+
+print(codes_b)
+
+miles = [100, 57, 40, 20]
+
+km = [value * 1.609 for value in miles]
+
+print(km)
+
+answers = [False, True, True]
+
+
+#Functions
+
+def greet_user(name):
+    """Display a simple greeting"""
+    print("\nHello, " + name.title() + "!")
+
+
+greet_user('John')
+
+
+def display_message():
+    """Learning functions in Python"""
+    print("\nI am learning Python.")
+
+
+display_message()
+
+
+def favorite_book(book):
+    """Name of my favorite book"""
+    print("\n\tMy favorite book is " + book.title() + ".")
+
+
+favorite_book('alice in wonderland')
+
+# Nesting: alist of dictionaries
+alien_1 = {'color': 'blue', 'points': 25}
+alien_2 = {'color': 'blue', 'points': 27}
+
+aliens = [alien_0, alien_1, alien_2]
+for alien in aliens:
+    print(alien)
+
+
+# Make an empty list for storing aliens.
+anders = []
+
+# Making 30 green aliens.
+for ander_number in range(0,30):
+    new_ander = {'color': 'black', 'points': 12, 'speed': 'slow'}
+    anders.append(new_ander)
+    # show first 5 aliens
+    for ander in anders[:5]:
+        print(anders)
+
+print("...")
+
+# Multiple function calls
+def describe_pet(animal_type, pet_name):
+    """Display information about a pet"""
+    print("\nI have a " + animal_type + ".")
+    print("My " + animal_type + "'s name is " + pet_name.title() + ".")
+
+describe_pet('hamster', 'roger')
+describe_pet('dog', 'george')
+
+# Adding a default value
+def describe_pet1(pet_name, animal_type='dog'):
+    """Adding a default value"""
+    print("I have a " + animal_type.title() + ".")
+    print("My " + animal_type + "'s name is " + pet_name + ".")
+
+describe_pet1("willie")
+# to ignore the default value, use explicit arguments for the parameter to be ignored
+# e.g., describe_pet(animal_type='cat', pet_name='felix').
+
+# Return simple values
+def get_formatted_name(first_name, last_name):
+    """Return full name, neatly formatted"""
+    full_name = first_name + " " + last_name
+    return full_name.title()
+
+musician = get_formatted_name('jimi', 'hendrix')
+rapper = get_formatted_name('kendrick', 'lamar')
+print(musician)
+print(rapper)
+
+# Making an argument optional
+def get_formatted_name(first_name, last_name, middle_name=''):
+    """Return a full name, neatly formatted w/optional middle name"""
+    if middle_name:
+        full_name = first_name + " " + middle_name + " " + last_name
+    else:
+        full_name = first_name + " " + last_name
+    return full_name.title()
+
+jazz_musician = get_formatted_name('kenny', 'rogers', 'g')
+print(jazz_musician)
+
+# Returning a dictionary
+def build_person(first_name, last_name, age=''):
+    """Return a dictionary of information about a person"""
+    person = {'first': first_name, 'last': last_name}
+    if age: # This section is included for the optional input of age
+        person['age'] = age
+    return person
+
+gospel_group = build_person('clarke', 'sisters', 26)
+print(gospel_group)
+
+# Using a function with a while loop
+# This is an infinite loop! So a break statement is included
+while True:
+    print("\nPlease tell me your name:")
+    print("(enter 'q' at any time to quit)")
+    f_name = input("First name: ")
+    if f_name == 'q':
+        break
+    l_name = input("Last name: ")
+    if l_name == 'q':
+        break
+
+    formatted_name = get_formatted_name(f_name, l_name)
+    print("\nHello, " + formatted_name + "!")
+
+# Passing a list
+def greet_users(names):
+    """Print a simple greeting to each user in the list."""
+    for name in names:
+        msg = "Hello, " + name.title() + "!"
+        print(msg)
+
+usernames = ['hannah', 'ty', 'margot']
+greet_users(usernames)
+
+# Modifying a list in a function
+unprinted_designs = ['samsung case', 'robot pendant', 'bertone car bumper']
+completed_models = [] # simulating the printing of each design till none left.
+
+while unprinted_designs:
+    current_design = unprinted_designs.pop()
+    # simulate creating a 3D print from the design.
+    print("Printing model: " + current_design)
+    completed_models.append(current_design)
+
+# Display all completed models.
+print("\nThe follwowing models have been printed:")
+for completed_model in completed_models:
+    print(completed_model)
+
+# Constructors method
+class Person:
+    def __init__(self, name, age, height):
+        self.name = name
+        self.age = age
+
+    def sayHello(self):
+        print('Hello!')
+
+    def sayBye(self):
+        print('Bye!')
+
+teacher = Person('Emily', 24, 45)
+teacher.sayBye()
+
+# Various uses of classes
+class BookSeries:
+    def __init__(self, name, books):
+        self.name = name
+        self.books = books
+        self.num_books = len(books)
+
+    def print_name(self):
+        print(self.name)
+
+    def print_books(self):
+        print(self.books)
+
+hg = BookSeries("Harry Potter", ["Philosopher's Stone, Chamber of Secrets", "Goblet of Fire",
+                                 "Prisoner of Askerban"])
+hg.print_books()
+print(hg.num_books)
+
+class Contact:
+    first = "Jane"
+    last = "Doe"
+    cell = "311156747"
+    email = "jdoe@gmail.com"
+
+    def get_cell(self):
+        print(self.cell)
+
+    def call(self):
+        print('calling...')
+        print(self.first, self.last)
+
+
+class Song:
+    def __init__(self, name, artist):
+        self.name = name
+        self.artist = artist
+
+song = Song("wgft", "Gunna")
+next_song = Song("happy", "Pharrell")
+
+class Car:
+    manufacturer = "Ferrari"
+    model = 2019
+    color = "red"
+
+    def print_specs(self):
+        print(self.manufacturer)
+        print(self.model)
+        print(self.color)
+
+    def change_color(self, new_color):
+        self.color = new_color
+        print("Color is now ", self.color)
+
+car = Car()
+print(car.color)
+car.change_color("yellow")
+
+# Object Oriented Programming and Functional programming
+
+#FP
+def getDistance(mph, h):
+    return mph * h
+
+mph = 60
+h = 2
+
+# OOP -Encapsulation
+
+class Dog:
+    name = 'Fido'
+    hungry = True
+
+    def eat(self):
+        self.hungry = False
+
+class Cat:
+    colour = "orange"
+
+    def meow(self):
+        print("Meow")
+
+class Car:
+    color = "grey"
+
+    def drive(self):
+        print("Accelerating...")
+
+
+
+
+
+
+
 
