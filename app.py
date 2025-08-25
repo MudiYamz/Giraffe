@@ -486,7 +486,8 @@ print("\nThe follwowing models have been printed:")
 for completed_model in completed_models:
     print(completed_model)
 
-# Constructors method
+#Classes
+# Constructors "__init__()" method
 class Person:
     def __init__(self, name, age, height):
         self.name = name
@@ -601,6 +602,35 @@ class Person:
 p1 = Person("John", 36)
 
 print(p1)
+
+# Use __str__() for simple return of the object or when you want your object to describe itself.
+# Create/custom method when you want your object to do something or provide information beyond its basic description.
+
+# Creating/custom methods
+class BankAccount:
+    def __init__(self, owner, balance=0):
+        self.owner = owner
+        self.balance = balance
+
+    def deposit(self, amount):
+        self.balance += amount
+        print(f"Deposited {amount}, new balance is {self.balance}")
+
+    def withdraw(self, amount):
+        if amount <= self.balance:
+            self.balance -= amount
+            print(f"Withdrew {amount}, new balance is {self.balance}")
+        else:
+            print("Insufficient funds")
+
+    def __str__(self):
+        return f"BankAccount(owner={self.owner}, balance={self.balance})"
+
+acc1 = BankAccount("Mike", 300)
+print(acc1)
+
+
+
 
 
 
