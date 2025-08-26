@@ -603,6 +603,9 @@ p1 = Person("John", 36)
 
 print(p1)
 
+# To delete the object property del p1.age
+# To delete the object del p1
+
 # Use __str__() for simple return of the object or when you want your object to describe itself.
 # Create/custom method when you want your object to do something or provide information beyond its basic description.
 
@@ -628,6 +631,12 @@ class BankAccount:
 
 acc1 = BankAccount("Mike", 300)
 print(acc1)
+
+# The Pass statement to avoid any error if there is a class definition with no content.
+class Joints:
+    pass
+
+# Python inheritance
 
 
 
