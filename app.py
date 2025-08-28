@@ -762,14 +762,51 @@ class Plane(Vehicle):
   def move(self):
     print("Fly!")
 
-#Function inside Function (scope)
+# Scope
+# Function inside Function
 def myfunc():
-  x = 300
+  x = 300 # A variable created inside a function has a local scope
   def myinnerfunc():
     print(x)
   myinnerfunc()
 
 myfunc()
+
+# Global scope
+x = 300 # A variable created outside a function has a global scope
+
+def myfunc():
+    x = 200 # this variable x is treated differently as a local scope
+    print(x)
+
+myfunc()
+
+print(x)
+# global key word usage
+def myfunc():
+  global x
+  x = 300
+
+myfunc()
+
+print(x)
+
+# module
+import datetime
+
+x = datetime.datetime.now()
+
+print(x.strftime("%A, %d %B %Y"))   # Saturday, 30 August 2025
+print(x.strftime("%I:%M %p"))       # 02:45 PM
+print(x.strftime("Day %j of %Y"))   # Day 242 of 2025
+
+
+
+
+
+
+
+
 
 
 
