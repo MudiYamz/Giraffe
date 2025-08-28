@@ -762,6 +762,14 @@ class Plane(Vehicle):
   def move(self):
     print("Fly!")
 
+#Function inside Function (scope)
+def myfunc():
+  x = 300
+  def myinnerfunc():
+    print(x)
+  myinnerfunc()
+
+myfunc()
 
 
 
