@@ -762,14 +762,31 @@ class Plane(Vehicle):
   def move(self):
     print("Fly!")
 
-#Function inside Function (scope)
+# Scope
+# Function inside Function
 def myfunc():
-  x = 300
+  x = 300 # A variable created inside a function has a local scope
   def myinnerfunc():
     print(x)
   myinnerfunc()
 
 myfunc()
+
+# Global scope
+x = 300
+
+def myfunc():
+    x = 200 # this variable x is treated differently as a local scope
+    print(x)
+
+myfunc()
+
+print(x) # A variable created outside a function has a global scope
+
+
+
+
+
 
 
 
