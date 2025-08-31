@@ -791,6 +791,19 @@ myfunc()
 
 print(x)
 
+# nested functions: nonlocal keyword for variables belonging to the outer function
+def myfunc():
+    x = 300
+    def myfunc1():
+        nonlocal x
+        x = 200
+    myfunc1()
+    print(x)
+
+myfunc()
+
+print(x)
+
 # module
 import datetime
 
@@ -801,7 +814,18 @@ print(x.strftime("%I:%M %p"))       # 02:45 PM
 print(x.strftime("Day %j of %Y"))   # Day 242 of 2025
 
 
+# call function testing
+number_squared(4,2)
+number_squared(3,3)
 
+
+# Create a Module, (created file mymodule.py and created functions and objects) then called in app.py
+import mymodule
+
+mymodule.greeting("Jonathan")
+
+a = mymodule.person1["name"]
+print(a)
 
 
 
