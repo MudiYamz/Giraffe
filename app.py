@@ -847,6 +847,50 @@ print(x.strftime("%A, %d %B %Y"))   # Saturday, 31 August 2025 (format only)
 print(x.strftime("%I:%M %p"))       # 02:45 PM (format only)
 print(x.strftime("Day %j of %Y"))   # Day 242 of 2025 (format only)
 
+# Creating date objects
+import datetime
+
+x = datetime.datetime(2020, 5, 17)
+
+print(x)
+
+# The strftime() method
+print(x.strftime("%b"))
+
+# Python Math
+# Built-in Math Functions
+x = min(5, 10, 25) # The min() and max() functions can be used to find the lowest or highest value in an iterable
+y = max(5, 10, 25)
+
+print(x)
+print(y)
+
+x = abs(-7.25) # The abs() function returns the absolute (positive) value of the specified number
+
+print(x)
+
+# The pow(x, y) function returns the value of x to the power of y (xy).
+x = pow(4, 3)
+
+print(x)
+
+import math
+
+x = math.sqrt(64)
+
+print(x)
+
+x = math.ceil(1.4)
+y = math.floor(1.4)
+
+print(x) # returns 2
+print(y) # returns 1
+
+x = math.pi
+
+print(x)
+
+
 
 
 
