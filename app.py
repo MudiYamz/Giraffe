@@ -804,22 +804,12 @@ myfunc()
 
 print(x)
 
-# module
-import datetime
-
-x = datetime.datetime.now()
-
-print(x.strftime("%A, %d %B %Y"))   # Saturday, 30 August 2025
-print(x.strftime("%I:%M %p"))       # 02:45 PM
-print(x.strftime("Day %j of %Y"))   # Day 242 of 2025
-
-
 # call function testing
 number_squared(4,2)
 number_squared(3,3)
 
-
-# Create a Module, (created file mymodule.py and created functions and objects) then called in app.py
+# module
+# Created a Module, (created module 'mymodule.py' and created a functions and a dictionary) then imported in app.py
 import mymodule
 
 mymodule.greeting("Jonathan")
@@ -827,9 +817,35 @@ mymodule.greeting("Jonathan")
 a = mymodule.person1["name"]
 print(a)
 
+# renaming module
+import mymodule as mx
 
+a = mx.person1["age"]
+print(a)
 
+# Built-in modules
+import platform
 
+x = platform.system()
+print(x)
+
+# Using the dir() function
+x = dir(platform)
+print(x)
+
+# import from module
+from mymodule import person1
+
+print(person1["age"])
+
+# Python datetime
+import datetime
+
+x = datetime.datetime.now()
+
+print(x.strftime("%A, %d %B %Y"))   # Saturday, 30 August 2025
+print(x.strftime("%I:%M %p"))       # 02:45 PM
+print(x.strftime("Day %j of %Y"))   # Day 242 of 2025
 
 
 
