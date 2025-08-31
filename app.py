@@ -843,9 +843,9 @@ import datetime
 
 x = datetime.datetime.now()
 
-print(x.strftime("%A, %d %B %Y"))   # Saturday, 30 August 2025
-print(x.strftime("%I:%M %p"))       # 02:45 PM
-print(x.strftime("Day %j of %Y"))   # Day 242 of 2025
+print(x.strftime("%A, %d %B %Y"))   # Saturday, 31 August 2025 (format only)
+print(x.strftime("%I:%M %p"))       # 02:45 PM (format only)
+print(x.strftime("Day %j of %Y"))   # Day 242 of 2025 (format only)
 
 
 
