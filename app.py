@@ -959,3 +959,74 @@ x = {
 # Use the sort_keys parameter to specify if the result should be sorted or not:
 print(json.dumps(x, indent=4, separators=(". ", " = "), sort_keys=True))
 
+#RegEx Module
+import re
+
+txt = "The plane in Spain"
+x = re.search("^The.*Spain$", txt)
+
+if x:
+    print("Yes, WE have a match!")
+else:
+    print("No match")
+
+# metacharacters,
+# ]	A set of characters	"[a-m]"	Try it »
+# \	Signals a special sequence (can also be used to escape special characters)	"\d"	Try it »
+# .	Any character (except newline character)	"he..o"	Try it »
+# ^	Starts with	"^hello"	Try it »
+# $	Ends with	"planet$"	Try it »
+# *	Zero or more occurrences	"he.*o"	Try it »
+# +	One or more occurrences	"he.+o"	Try it »
+# ?	Zero or one occurrences	"he.?o"	Try it »
+# {}	Exactly the specified number of occurrences	"he.{2}o"	Try it »
+# |	Either or	"falls|stays"	Try it »
+# ()	Capture and group
+#
+# flags,
+# re.ASCII	re.A	Returns only ASCII matches	Try it »
+# re.DEBUG		Returns debug information	Try it »
+# re.DOTALL	re.S	Makes the . character match all characters (including newline character)	Try it »
+# re.IGNORECASE	re.I	Case-insensitive matching	Try it »
+# re.MULTILINE	re.M	Returns only matches at the beginning of each line	Try it »
+# re.NOFLAG		Specifies that no flag is set for this pattern
+# re.UNICODE	re.U	Returns Unicode matches. This is default from Python 3. For Python 2: use this flag to return only Unicode matches	Try it »
+# re.VERBOSE	re.X	Allows whitespaces and comments inside patterns. Makes the pattern more readable
+# special sequences,
+# \A	Returns a match if the specified characters are at the beginning of the string	"\AThe"	Try it »
+# \b	Returns a match where the specified characters are at the beginning or at the end of a word
+# (the "r" in the beginning is making sure that the string is being treated as a "raw string")	r"\bain"
+#
+# r"ain\b"	Try it »
+#
+# Try it »
+# \B	Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word
+# (the "r" in the beginning is making sure that the string is being treated as a "raw string")	r"\Bain"
+#
+# r"ain\B"	Try it »
+#
+# Try it »
+# \d	Returns a match where the string contains digits (numbers from 0-9)	"\d"	Try it »
+# \D	Returns a match where the string DOES NOT contain digits	"\D"	Try it »
+# \s	Returns a match where the string contains a white space character	"\s"	Try it »
+# \S	Returns a match where the string DOES NOT contain a white space character	"\S"	Try it »
+# \w	Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character)	"\w"	Try it »
+# \W	Returns a match where the string DOES NOT contain any word characters	"\W"	Try it »
+# \Z	Returns a match if the specified characters are at the end of the string
+# sets
+# [arn]	Returns a match where one of the specified characters (a, r, or n) is present	Try it »
+# [a-n]	Returns a match for any lower case character, alphabetically between a and n	Try it »
+# [^arn]	Returns a match for any character EXCEPT a, r, and n	Try it »
+# [0123]	Returns a match where any of the specified digits (0, 1, 2, or 3) are present	Try it »
+# [0-9]	Returns a match for any digit between 0 and 9	Try it »
+# [0-5][0-9]	Returns a match for any two-digit numbers from 00 and 59	Try it »
+# [a-zA-Z]	Returns a match for any character alphabetically between a and z, lower case OR upper case	Try it »
+# [+]	In sets, +, *, ., |, (), $,{} has no special meaning, so [+] means: return a match for any + character in the string
+
+# RegEx functions - findall(), search(), sub(), split()
+
+
+
+
+
+
