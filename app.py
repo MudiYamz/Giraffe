@@ -938,7 +938,7 @@ print(json.dumps(True))  # bool
 print(json.dumps(False))
 print(json.dumps(None))  #  none(null)
 
-# the use of indents, separators to make easier to read the results.
+# the use of indents, separators, sort_keys to make easier to read the results.
 import json
 
 x = {
@@ -956,5 +956,6 @@ x = {
 
 # use four indents to make it easier to read the result:
 # Use the separators parameter to change the default separator:
-print(json.dumps(x, indent=4, separators=(". ", " = ")))
+# Use the sort_keys parameter to specify if the result should be sorted or not:
+print(json.dumps(x, indent=4, separators=(". ", " = "), sort_keys=True))
 
