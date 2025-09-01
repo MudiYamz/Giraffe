@@ -1,12 +1,10 @@
-from encodings.punycode import selective_find
-
 print("   /|")
 print("  / |")
 print(" /  |")
 print("/___|")
 
 # Input and data types
-user_prompt = "What is your name? "
+user_prompt = "What is your name?"
 name_1 = input(user_prompt)
 print("Welcome " + name_1)
 
@@ -438,7 +436,7 @@ jazz_musician = get_formatted_name('kenny', 'rogers', 'g')
 print(jazz_musician)
 
 # Returning a dictionary
-def build_person(first_name, last_name, age=''):
+def build_person(first_name, last_name, age =''):
     """Return a dictionary of information about a person"""
     person = {'first': first_name, 'last': last_name}
     if age: # This section is included for the optional input of age
@@ -901,8 +899,9 @@ print(x)
 # Array → [1, 2, 3]
 # Parse JSON - Convert from JSON to Python
 import json
-# some JSON
-x = '{ "name":"John", "age":30, "city:"New York"}'
+
+# some JSON:
+x = '{ "name":"John", "age":30, "city":"New York"}'
 
 # parse x:
 y = json.loads(x)
@@ -929,13 +928,13 @@ print(y)
 # Convert Python objects into JSON strings, and print the values:
 import json
 
-print(json.dumps({"name": "John", "age": 30}))
-print(json.dumps(["apple", "bananas"]))
-print(json.dumps(("apple", "bananas")))
-print(json.dumps("hello"))
-print(json.dumps(42))
-print(json.dumps(31.76))
-print(json.dumps(True))
+print(json.dumps({"name": "John", "age": 30})) # dict
+print(json.dumps(["apple", "bananas"])) # list
+print(json.dumps(("apple", "bananas"))) # tuples
+print(json.dumps("hello")) # string
+print(json.dumps(42))  # int
+print(json.dumps(31.76))  # float
+print(json.dumps(True))  # bool
 print(json.dumps(False))
-print(json.dumps(None))
+print(json.dumps(None))  #  none(null)
 
