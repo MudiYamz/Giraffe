@@ -938,3 +938,23 @@ print(json.dumps(True))  # bool
 print(json.dumps(False))
 print(json.dumps(None))  #  none(null)
 
+# the use of indents, separators to make easier to read the results.
+import json
+
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+# use four indents to make it easier to read the result:
+# Use the separators parameter to change the default separator:
+print(json.dumps(x, indent=4, separators=(". ", " = ")))
+
