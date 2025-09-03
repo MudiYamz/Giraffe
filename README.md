@@ -1,1 +1,1 @@
-This is a practice sheet for my python training
+This is my all in one python practice sheet
