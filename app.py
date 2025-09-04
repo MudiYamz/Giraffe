@@ -481,10 +481,12 @@ while unprinted_designs:
     print("Printing model: " + current_design)
     completed_models.append(current_design)
 
-# Display all completed models.
+# Display all completed models
+
 print("\nThe follwowing models have been printed:")
 for completed_model in completed_models:
     print(completed_model)
+
 
 #Classes
 # Constructors "__init__()" method
@@ -970,27 +972,27 @@ if x:
 else:
     print("No match")
 
-# metacharacters,
-# ]	A set of characters	"[a-m]"	Try it »
-# \	Signals a special sequence (can also be used to escape special characters)	"\d"	Try it »
-# .	Any character (except newline character)	"he..o"	Try it »
-# ^	Starts with	"^hello"	Try it »
-# $	Ends with	"planet$"	Try it »
-# *	Zero or more occurrences	"he.*o"	Try it »
-# +	One or more occurrences	"he.+o"	Try it »
-# ?	Zero or one occurrences	"he.?o"	Try it »
-# {}	Exactly the specified number of occurrences	"he.{2}o"	Try it »
-# |	Either or	"falls|stays"	Try it »
+# Metacharacters,
+# []	A set of characters	"[a-m]"
+# \	Signals a special sequence (can also be used to escape special characters)	"\d"
+# .	Any character (except newline character)	"he..o"
+# ^	Starts with	"^hello"
+# $	Ends with	"planet$"
+# *	Zero or more occurrences	"he.*o"
+# +	One or more occurrences	"he.+o"
+# ?	Zero or one occurrences	"he.?o"
+# {}	Exactly the specified number of occurrences	"he.{2}o"
+# |	Either or	"falls|stays"
 # ()	Capture and group
 #
 # flags,
-# re.ASCII	re.A	Returns only ASCII matches	Try it »
-# re.DEBUG		Returns debug information	Try it »
-# re.DOTALL	re.S	Makes the . character match all characters (including newline character)	Try it »
-# re.IGNORECASE	re.I	Case-insensitive matching	Try it »
-# re.MULTILINE	re.M	Returns only matches at the beginning of each line	Try it »
+# re.ASCII	re.A	Returns only ASCII matches
+# re.DEBUG		Returns debug information
+# re.DOTALL	re.S	Makes the . character match all characters (including newline character)
+# re.IGNORECASE	re.I	Case-insensitive matching
+# re.MULTILINE	re.M	Returns only matches at the beginning of each line
 # re.NOFLAG		Specifies that no flag is set for this pattern
-# re.UNICODE	re.U	Returns Unicode matches. This is default from Python 3. For Python 2: use this flag to return only Unicode matches	Try it »
+# re.UNICODE	re.U	Returns Unicode matches. This is default from Python 3. For Python 2: use this flag to return only Unicode matches
 # re.VERBOSE	re.X	Allows whitespaces and comments inside patterns. Makes the pattern more readable
 # special sequences,
 # \A	Returns a match if the specified characters are at the beginning of the string	"\AThe"	Try it »
@@ -1082,5 +1084,24 @@ import re
 txt = "The rain in Spain"
 x = re.search("ai", txt)
 print(x) #this will print an object
+
+
+# PIP
+# is a package manager for Python packages, or modules if you like.
+import camelcase
+
+c = camelcase.CamelCase()
+
+txt = "hello world"
+
+print(c.hump(txt))
+
+# Learned how to list installed packages using 'pip3 list'
+# Successfully updated my pip version and installed camelcase package
+# Also learned how to uninstall 'pip3 uninstall camelcase'. With Macbook all i have to do is call pip3 to either install
+# or uninstall and I can check available packages with 'pip3 list'.
+
+
+
 
 
