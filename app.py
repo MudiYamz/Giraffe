@@ -1099,7 +1099,7 @@ print(c.hump(txt))
 # Learned how to list installed packages using 'pip3 list'
 # Successfully updated my pip version and installed camelcase package
 # Also learned how to uninstall 'pip3 uninstall camelcase'. With Macbook all i have to do is call pip3 to either install
-# or uninstall and I can check available packages with 'pip3 list'.
+# or uninstall and I can check available packages with 'pip3 list'
 
 
 
