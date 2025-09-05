@@ -1124,8 +1124,73 @@ except NameError:
 except:
   print("Something else went wrong")
 
+# The try block does not raise any errors, so the else block is executed:
+
+try:
+  print("Hello")
+except:
+  print("Something went wrong")
+else:
+  print("Nothing went wrong")
+
+#The finally block gets executed no matter if the try block raises any errors or not:
+
+try:
+  print(u)
+except:
+  print("Something went wrong")
+finally:
+  print("The 'try except' is finished")
+
+# Try to open and write to a file that is not writable:
+
+try:
+  f = open("demofile.txt")
+  try:
+    f.write("Lorum Ipsum")
+  except:
+    print("Something went wrong when writing to the file")
+  finally:
+    f.close()
+except:
+  print("Something went wrong when opening the file")
+
+# The program can continue, without leaving the file object open.
 
 
+# As a Python developer you can choose to raise an exception if a condition occurs.
 
+# To raise an exception, use the raise keyword.
+# u = -1
+
+# if u < 0:
+  # raise Exception("Sorry, no numbers below zero")
+
+# The raise keyword is used to raise an exception.
+
+# You can define what kind of error to raise, and the text to print to the user.
+
+# Raise a TypeError if x is not an integer:
+
+# u = "hello"
+
+# if not type(u) is int:
+  # raise TypeError("Only integers are allowed")
+
+# Further learning on F strings
+price = 59
+tax = 0.25
+txt = f"The price is {price + (price * tax)} dollars"
+print(txt)
+
+price = 49
+txt = f"It is very {'Expensive' if price>50 else 'Cheap'}"
+
+print(txt)
+
+# Quick test code
+fruit = "apples"
+txt = f"I love {fruit.upper()}"
+print(txt)
 
 
